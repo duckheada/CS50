@@ -1,0 +1,3 @@
+-> https://youtu.be/o5Bkc7gtRjo?t=275
+    understand: simulateGame() + simulateRound() functions from lab6
+    write simulateTournament()

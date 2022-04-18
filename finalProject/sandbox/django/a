@@ -1,0 +1,18 @@
+class TaskDetailView(DetailView): 
+    model = Task
+    template_name = 'task_detail.html'
+
+class TaskCreateView(CreateView):
+    model = Task
+    template_name = "project.html"
+    fields = ['name', 'description','category', 'due_date']
+
+class TaskUpdateView(UpdateView):
+    model = Task
+    template_name = "project_update.html"
+    fields = ['name', 'description', 'category', 'due_date']
+
+class TaskDeleteView(DeleteView):
+    model = Task
+    template_name = 'task_delete.html'
+    success_url = reverse_lazy('task')
